@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmee</title>
+   
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--==============レイアウトを制御する独自のCSSを読み込み最初のロゴ表示===============-->
+  <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="5-1-9.css">
+  
+
+    
+     <!--==============JQuery読み込み===============-->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/js/4-1-4.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/js/3-2-3-1.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+   <script>
+     new Vivus('move', {
+       type: 'scenario-sync',
+       duration: 100,
+       forceRender: false,
+       animTimingFunction: Vivus.EASE
+     })
+   </script>
+ <!--==============JQuery読み込み===============-->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+ <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-6/js/4-1-6.js"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/js/6-1-2.js"></script>
+ <script>
+   (window.onload = function() {
+   
+     // フェードイン処理
+     jQuery(window).scroll(function (){
+       jQuery(".fade").each(function(){
+         var winheight = jQuery(window).height();
+         var posi = jQuery(this).offset().top;
+         var scroll = jQuery(window).scrollTop();
+         if (scroll + winheight > posi){
+           jQuery(this).addClass("fadein");
+         } else {
+           //　スクロールで画面上部に戻った際に要素を非表示にしたい場合は、下記の行のコメントを外し有効にしてください。
+           //jQuery(this).removeClass("fadein");
+         }
+       });
+      });
+   
+   })(); 
+   </script>
+ <script src="js/script.js"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="js/3-2-3-1.js"></script><!--←本体の下に設置しないと動きません！-->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+ <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-11/js/5-1-11.js"></script>
+ 
+  <script src="script.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+ <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-9/css/5-1-9.css">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+
+
+<!--==============自作のCSSを読み込み===============-->
+<link rel="stylesheet" href="style.css">
+
+ 
+ <script type="text/javascript">
+         $(document).ready(function(){
+             $('.slider').bxSlider({
+                 auto: true,
+                 pause: 5000,
+             });
+         });
+ </script>
+ <script>
+  (window.onload = function() {
+  
+    // フェードイン処理
+    jQuery(window).scroll(function (){
+      jQuery(".fade").each(function(){
+        var winheight = jQuery(window).height();
+        var posi = jQuery(this).offset().top;
+        var scroll = jQuery(window).scrollTop();
+        if (scroll + winheight > posi){
+          jQuery(this).addClass("fadein");
+        } else {
+          //　スクロールで画面上部に戻った際に要素を非表示にしたい場合は、下記の行のコメントを外し有効にしてください。
+          //jQuery(this).removeClass("fadein");
+        }
+      });
+     });
+  
+  })(); 
+  (window.onload = function() {
+  
+  // フェードイン処理
+  jQuery(window).scroll(function (){
+    jQuery(".fade1").each(function(){
+      var winheight = jQuery(window).height();
+      var posi = jQuery(this).offset().top;
+      var scroll = jQuery(window).scrollTop();
+      if (scroll + winheight > posi){
+        jQuery(this).addClass("fade1in");
+      } else {
+        //　スクロールで画面上部に戻った際に要素を非表示にしたい場合は、下記の行のコメントを外し有効にしてください。
+        //jQuery(this).removeClass("fadein");
+      }
+    });
+   });
+
+})(); 
+  </script>
+ </head>
+
+ <body>
+    <div id="splash">
+        <div id="splash_logo">
+          <img src="images/jm logo.png" alt="" class="fadeUp">
+          
+        </div>
+      </div>
+      <header>
+        <div class="header">
+            <img src="images/jm logo.svg" alt="" width="100px" margin-top="10px"class="header__logo">
+        </div>
+           <nav>
+            <ul class="header-menu">
+              <for action="" method="get">
+                <input id="sbox1"  id="s" name="s" type="text" placeholder="キーワードを入力" />
+                </for>
+                <li class="header-menu__item"><a href="index.html">TOP</a></li>
+                <li class="header-menu__item"><a href="#about">ABOUT</a></li>
+                <li class="header-menu__item"><a href="#column">ITEM</a></li>
+                <li class="header-menu__item"><a href="cart.html"><img src="images/cart-90.png" width="20px" alt=""></a></li>
+                <li class="header-menu__item"><a href="login.html"><img src="images/icon-96.png" width="20px" alt=""></a></li>
+            </ul>
+            </nav>
+        
+    </header>
+      <div class="css-carousel-slider5">
+        <div class="slide-wrap-main">
+          
+            <div class="slide"><img src="images/img6.png" alt=""></div>
+        </div>
+        <div class="slide-wrap">
+            <div class="slide"><img src="images/img5.png" alt=""></div>
+            <div class="slide"><img src="images/img2.JPG" alt=""></div>
+            <div class="slide"><img src="images/img3.png" alt=""></div>
+            <div class="slide"><img src="images/img4.jpg" alt=""></div>
+            <div class="slide"><img src="images/img1.png" alt=""></div>
+            
+        </div>
+        </div>
+       
+        <div id="about">  
+          <h3>ABOUT</h3>
+        </div>
+
+         <div class="fade" id="about">
+          <figure class="image"><img src="images/img2.JPG" alt=""></figure>
+          <div class="right">
+            <p class="title">特別感と自己愛</p>
+            <p class="subtitle">洋服は個性を表現し価値観を伝えることができる非言語コミュニケーション</p>
+            <p class="text">洋服を着用することで自己愛や自信を高めることができる。
+              日常の中で辛いことや悲しいことがあっても、特別な日にかわいいお洋服を着ることで特別感をもたらすことができ、自分自身に自信を持ってほしいという願いが込められています</p>
+          </div>
+        </div>
+        <div class="fade1">
+        <div id="column" class="column03">
+          <h3>ITEM</h3>
+          <ul>
+          <li><a href="item1.html"><img src="images/item1.png" width="300px" /><p>Bijou Logo T-shirt</p><span>3,500yen</span> </a></li>
+          
+          <li><a href="item2.html"><img src="images/item2.png" width="300px" opacity="0.6"
+            transition-duration="0.3s" backgraund-color="#000"/><p>Ribbon Logo Sweat</p><span>5,500yen</span></a></li>
+          <li><a href="item3.html"><img src="images/item3.png" width="300px" /><p>Lace Logo Sweat</p><span>4,500yen</span></a></li>
+          <li><a href="item4.html"><img src="images/item4.png" width="300px" /><p>Collar Pearl Cut and sew</p><span>3,000yen</span></a></li>
+          <li><a href="item5.html"><img src="images/item5.png" width="300px" /><p>Glitter Logo T-shirt</p><span>3,000yen</span></a></li>
+          <li><a href="item6.html"><img src="images/item6.png" width="300px" /><p>Logo Totebag</p><span>2,500yen</span></a></li>
+          </ul>
+          </div>
+        </div>
+    <div>
+
+
+
+
+  </div>
+</body>
+</html>
