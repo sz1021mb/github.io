@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Totebag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F9F3EC;
+        }
+
+        header {
+            background-color:none;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-family:serif;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-family:serif;
+        }
+
+        .price {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+        button {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .go-back {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+         }
+         button1 {
+            background-color:none;
+            color: #000000;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+         }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <img src="images/jm logo.svg" alt="" width="100px" margin-top="10px"class="header__logo">
+        </div>
+    </header>
+
+<main>
+    <img src="images/item6.png" alt="Product Image">
+    <h1>Logo Totebag</h1>
+    <p>トートバッグの持ち手に優雅に結ばれたリボンが、このバッグの個性を際立たせます。<br>洗練されたデザインで、どんな場面にもマッチするアクセサリーです。頼りになるトートバッグの機能性と、十分な収納スペースが特徴。ショッピングからデイリーユースまで、様々なシーンで活躍します。</p>
+    <p class="price">2,500yen</p>
+    <button onclick="addToCart()">カートに追加</button>
+
+</main>
+<div class="go-back">
+    <button1 onclick="goBack()">前の画面に戻る</button1>
+</div>
+
+<script>
+    function addToCart() {
+        alert('商品がカートに追加されました！');
+        // ここで実際のカートへの追加処理を行うことができます
+    }
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+</body>
+</html>
